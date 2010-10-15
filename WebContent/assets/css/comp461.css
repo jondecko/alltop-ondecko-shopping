@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+
+h1, h2 {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 15px 0px;
+	padding: 0px;	
+	text-align:center;
+}
+
+.mainShell {
+	width: 1028px;
+}	
+
+.banner {
+	width: 1028px;
+	padding: 5px;
+	text-align:left;
+}
+
+.nav {
+	width: 1028px;
+	padding: 5px;
+	text-align:left;	
+	background-color:#D8D8D8;
+}
+
+.pageIdentifier {
+	font-family: fantasy;
+}
+	
+
+.content {
+	width: 1028px;
+	padding: 15px;
+	text-align:left;	
+}
+
+.viewItemShell {
+	width: 1028px;
+}
+
+.viewItemLeftPanel {
+	width: 150px;
+	float: left;
+}
+
+.viewItemRightPanel {
+	width: 828px;
+	float: left;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.viewItemName {
+}
+
+.viewItemShort {
+}
+
+.viewItemPrice {
+}
+
+.viewItemStock {
+	font-weight: bold;
+	color: green;
+}
+
+.orderStatusComplete {
+	font-weight: bold;
+	color: green;
+}
+
+.orderStatusPending {
+	font-weight: bold;
+	color: red;
+}
