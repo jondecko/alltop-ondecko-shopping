@@ -23,8 +23,8 @@
 						<td width=10%>$125.25</td>
 						<td width=5%><input type="text" name="" value="" id="" /></td>				
 						<td width=15%>
-						<input type="submit" class="noicon" name="details" value="Details" id="details" />
-						<input type="submit" class="create" name="add" value="Add" id="add" /></td>
+						<input type="button" onclick="location='viewItem.jsp'" value="Details" />
+						<input type="button" onclick="" value="Add" /></td>
 					</tr>
 					<tr>
 						<td width=10%><center><img src="assets/images/item2.jpg"></center></td>
@@ -32,8 +32,8 @@
 						<td width=10%>$5.00</td>
 						<td width=5%><input type="text" name="" value="" id="" /></td>
 						<td width=15%>
-						<input type="submit" class="noicon" name="details" value="Details" id="details" />
-						<input type="submit" class="create" name="add" value="Add" id="add" /></td>
+						<input type="button" onclick="location='viewItem.jsp'" value="Details" />
+						<input type="button" onclick="" value="Add" /></td>
 					</tr>
 				</table>
 			</form>

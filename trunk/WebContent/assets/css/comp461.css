@@ -75,5 +75,10 @@ body {
 
 .orderStatusPending {
 	font-weight: bold;
+	color: orange;
+}
+
+.orderStatusCanceled {
+	font-weight: bold;
 	color: red;
 }

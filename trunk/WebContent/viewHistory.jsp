@@ -27,7 +27,7 @@
                                 <td valign="top" class="action">
                                   <div class="buttons">
                                     <span class="button">
-                                      <input type="submit" class="" name="" value="View Order" />
+                                      <input type="button" onclick="location='viewOrderComplete.jsp'" value="View Order" />
                                     </span>
                                   </div>
                                 </td>
@@ -39,19 +39,19 @@
                                 <td valign="top" class="action">
                                   <div class="buttons">
                                     <span class="button">
-                                      <input type="submit" class="" name="" value="View Order" />
+                                      <input type="button" onclick="location='viewOrderPending.jsp'" value="View Order" />
                                     </span>
                                   </div>
                                 </td>
                             </tr>
                            <tr class="prop">
                                 <td valign="top" class="orderNumber">01625</td>
-                                <td valign="top" class="orderStatusComplete">Complete</td>
+                                <td valign="top" class="orderStatusCanceled">Canceled</td>
                                 <td valign="top" class="totalPrice">$25.85</td>
                                 <td valign="top" class="action">
                                   <div class="buttons">
                                     <span class="button">
-                                      <input type="submit" class="" name="" value="View Order" />
+                                      <input type="button" onclick="location='viewOrderCanceled.jsp'" value="View Order" />
                                     </span>
                                   </div>
                                 </td>

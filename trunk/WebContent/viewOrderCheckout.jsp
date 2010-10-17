@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-        <title>Altop/Ondecko Shopping Cart Application - View Order Pending</title>
+        <title>Altop/Ondecko Shopping Cart Application - View Order Checkout</title>
         <link rel="stylesheet" href="assets/css/comp461.css" />
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
 	</head>
@@ -13,7 +13,11 @@
 	<div class="mainShell">
 		<jsp:include page="/includes/banner.jsp" />
 		<jsp:include page="/includes/navigation.jsp" />
-		<div class="pageIdentifier">View Order Page Pending</div>
+		<div class="pageIdentifier">View Order Checkout Page</div>
+		<p align="left">
+		Thank you for your order!  Below is a list that details the order you just made.  You may cancel your order up until your order has been shipped.  You may also check 
+		back on the website to see the current/past status of the orders you have made with the Alltop/Ondecko shopping cart!
+		</p>
 		<div class="content">
 			<table border="1"><tr><th></th><th>Product</th><th>Product Description</th><th>Quantity</th><th>Item Price</th><th>Total Price</th>
 				<tbody>
