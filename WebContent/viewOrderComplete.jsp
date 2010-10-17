@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-        <title>Altop/Ondecko Shopping Cart Application - View Order</title>
+        <title>Altop/Ondecko Shopping Cart Application - View Order Complete</title>
         <link rel="stylesheet" href="assets/css/comp461.css" />
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
 	</head>
@@ -13,7 +13,7 @@
 	<div class="mainShell">
 		<jsp:include page="/includes/banner.jsp" />
 		<jsp:include page="/includes/navigation.jsp" />
-		<div class="pageIdentifier">View Order Page</div>
+		<div class="pageIdentifier">View Order Complete Page</div>
 		<div class="content">
 			<table border="1"><tr><th></th><th>Product</th><th>Product Description</th><th>Quantity</th><th>Item Price</th><th>Total Price</th>
 				<tbody>
@@ -45,7 +45,7 @@
             	</tbody>
 			</table>
 			<div class="orderStatusComplete">
-				<p>Oder Status - Complete</p>
+				<p>Order Status - Complete</p>
 			</div>
 		</div>	<!-- End content div -->
     </div>	<!-- End mainShell div -->

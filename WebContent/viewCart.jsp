@@ -15,7 +15,7 @@
 		<jsp:include page="/includes/navigation.jsp" />
 		<div class="pageIdentifier">View Cart Page</div>
 		<div class="content">
-			<form action="" method="post" >
+			<form action="viewOrderCheckout.jsp" method="POST" >
                 <div class="dialog">
                     <table border="1"><tr><th></th><th>Product</th><th>Product Description</th><th>Quantity</th><th>Item Price</th><th>Total Price</th><th>Action</th>
                         <tbody>
@@ -30,8 +30,8 @@
                                 <td valign="top" class="name">
                                   <div class="buttons">
                                     <span class="button">
-                                      <input type="submit" class="save" name="edit" value="Edit" id="edit" />
-                                      <input type="submit" class="delete" name="remove" value="Remove" id="remove" />
+                                      <input type="button" value="Edit" />
+                                      <input type="button" value="Remove" />
                                     </span>
                                   </div>
                                 </td>
@@ -46,8 +46,8 @@
                                 <td valign="top" class="name">
                                   <div class="buttons">
                                     <span class="button">
-                                      <input type="submit" class="save" name="edit" value="Edit" id="edit" />
-                                      <input type="submit" class="delete" name="remove" value="Remove" id="remove" />
+                                      <input type="button" value="Edit" />
+                                      <input type="button" value="Remove" />
                                     </span>
                                   </div>
                                 </td>
@@ -59,7 +59,7 @@
                                 <td></td>
                                 <td></td>
                                 <td valign="top" class="grandTotalPrice">$150.25</td>
-                                <td><input type="submit" class="checkout" name="checkout" value="Checkout" id="checkout" /></td>
+                                <td><input type="submit" value="Checkout" /></td>
                             </tr>
                         </tbody>
                     </table>

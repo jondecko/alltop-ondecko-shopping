@@ -44,11 +44,8 @@
 					</tr>
             	</tbody>
 			</table>
-			<div class="orderStatusPending">
-				<p>Order Status - Pending</p>
-				<form action="" method="post">
-				<p><input type="submit" class="create" name="cancel" value="Cancel Order" id="cancel" /></p>
-				</form>
+			<div class="orderStatusCanceled">
+				<p>Order Status - Canceled</p>
 			</div>
 		</div>	<!-- End content div -->
     </div>	<!-- End mainShell div -->

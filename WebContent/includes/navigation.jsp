@@ -12,5 +12,7 @@
 	<span class="menuButton"><a class="" href="viewCart.jsp">View Cart</a></span> |
 	<span class="menuButton"><a class="" href="viewHistory.jsp">View History</a></span> |
 	<span class="menuButton"><a class="" href="viewOrderComplete.jsp">View Order (Complete)</a></span> |
-	<span class="menuButton"><a class="" href="viewOrderPending.jsp">View Order (Pending)</a></span>
+	<span class="menuButton"><a class="" href="viewOrderPending.jsp">View Order (Pending)</a></span> |
+	<span class="menuButton"><a class="" href="viewOrderCheckout.jsp">View Order (Checkout)</a></span> |
+	<span class="menuButton"><a class="" href="viewOrderCanceled.jsp">View Order (Canceled)</a></span>
 </div>
