@@ -52,7 +52,7 @@ public class ActionMap
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document doc = db.parse(file);
 			doc.getDocumentElement().normalize();
-			//System.out.println("Root element " + doc.getDocumentElement().getNodeName());
+			//doc.getDocumentElement().getNodeName();
 			NodeList nodeLst = doc.getElementsByTagName("action");
 
 			for (int s = 0; s < nodeLst.getLength(); s++) 
@@ -102,7 +102,7 @@ public class ActionMap
 	/**
 	 * getClass method.
 	 * 
-	 * @param actionName	Name of the action class
+	 * @param actionName	Name of the action
 	 * @return				Name of the Class for the specific action class
 	 */
 	public String getClassString(String actionName)
@@ -113,7 +113,7 @@ public class ActionMap
 	/**
 	 * getSucess method.
 	 * 
-	 * @param actionName	Name of the action class
+	 * @param actionName	Name of the action
 	 * @return				Name of the Success for the specific action class
 	 */
 	public String getSuccess(String actionName)
@@ -124,7 +124,7 @@ public class ActionMap
 	/**
 	 * getFailure method.
 	 * 
-	 * @param actionName	Name of the action class
+	 * @param actionName	Name of the action
 	 * @return				Name of the Failure for the specific action class
 	 */
 	public String getFailure(String actionName)
@@ -135,7 +135,7 @@ public class ActionMap
 	/**
 	 * getParam method.
 	 * 
-	 * @param actionName	Name of the action class
+	 * @param actionName	Name of the action
 	 * @return				Name of the Param for the specific action class
 	 */
 	public String getParam(String actionName)
@@ -143,11 +143,27 @@ public class ActionMap
 		return m_actionMap.get(actionName).get("PARAM");
 	}
 	
+	/**
+	 * getWholeAction method.
+	 * 
+	 * @param actionName	Name of the action 
+	 * @return				A Map<String, String> object where the key is the
+	 * 						name of the action.
+	 */
 	public Map<String, String> getWholeAction(String actionName)
 	{
 		return m_actionMap.get(actionName);
 	}
 	
+	/**
+	 * addAction helper method
+	 * 
+	 * @param actionName	Name of the action
+	 * @param className		Class that the action maps with
+	 * @param success		Name of view file that success maps with
+	 * @param failure		Name of view file that failure maps with
+	 * @param param			Param
+	 */
 	private void addAction(String actionName, String className, String success, String failure, String param)
 	{
 		Map<String, String> temp = new HashMap<String, String>();
