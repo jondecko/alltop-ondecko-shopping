@@ -25,7 +25,7 @@
                                     <label for="firstName">First Name</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="firstName" value="" id="firstName" />
+                                    <input type="text" name="firstName" id="firstName" value='${results[0].FIRSTNAME}' />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -33,7 +33,7 @@
                                     <label for="lastName">Last Name</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="lastName" value="" id="lastName" />
+                                    <input type="text" name="lastName" id="lastName" value="${results[0].LASTNAME}" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -41,7 +41,7 @@
                                     <label for="email">Email</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="email" value="" id="email" />
+                                    <input type="text" name="email" id="email" value="${results[0].EMAIL}"  />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -49,7 +49,7 @@
                                     <label for="username">Username</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" maxlength="15" name="username" value="" id="username" />
+                                    <input type="text" maxlength="15" name="userName" id="userName" value="${results[0].USERNAME}" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -57,7 +57,7 @@
                                     <label for="password">Password</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" maxlength="15" name="password" value="" id="password" />
+                                    <input type="text" maxlength="15" name="password" id="password"  value="${results[0].PASSWORD}" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -65,7 +65,7 @@
                                     <label for="address">Address</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="address" value="" id="address" />
+                                    <input type="text" name="address" value="${results[0].ADDRESS}" id="address" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -73,7 +73,7 @@
                                     <label for="state">State</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="state" value="" id="state" />
+                                    <input type="text" name="state" value="${results[0].STATE}" id="state" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -81,7 +81,7 @@
                                     <label for="city">City</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="city" value="" id="city" />
+                                    <input type="text" name="city" value="${results[0].CITY}" id="city" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -89,14 +89,14 @@
                                     <label for="zipcode">Zipcode</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="zipcode" value="" id="zipcode" />
+                                    <input type="text" name="zipCode" value="${results[0].ZIPCODE}" id="zipCode" />
                                 </td>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="areacode">Area Code</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="areacode" value="" id="areacode" />
+                                    <input type="text" name="areaCode" value="${results[0].AREACODE}" id="areaCode" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -104,7 +104,7 @@
                                     <label for="phone">Phone Number</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="phone" value="" id="phone" />
+                                    <input type="text" name="phone" value="${results[0].PHONE}" id="phone" />
                                 </td>
                             </tr>
                         </tbody>

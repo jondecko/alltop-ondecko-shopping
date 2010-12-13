@@ -48,6 +48,8 @@ public class ActionMap
 		try
 		{
 			File file = new File(configUrl);
+			System.out.println(file.getAbsolutePath());
+
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document doc = db.parse(file);

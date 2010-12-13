@@ -15,9 +15,18 @@ body {
 }	
 
 .banner {
-	width: 1028px;
+	float: left;
+	width: 828px;
 	padding: 5px;
 	text-align:left;
+}
+
+.sessionName {
+	float: left;
+	width: 190px;
+	text-align: right;
+	border: thin;
+	height: 90px;
 }
 
 .nav {
@@ -29,6 +38,7 @@ body {
 
 .pageIdentifier {
 	font-family: fantasy;
+	text-align: center;
 }
 	
 
@@ -63,9 +73,14 @@ body {
 .viewItemPrice {
 }
 
-.viewItemStock {
+.viewItemInStock {
 	font-weight: bold;
 	color: green;
+}
+
+.viewItemOutStock {
+	font-weight: bold;
+	color: red;
 }
 
 .orderStatusComplete {

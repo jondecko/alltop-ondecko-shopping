@@ -10,11 +10,12 @@
 	</head>
     <body>
     <center>
+	<div class="mainShell">
 		<jsp:include page="/includes/banner.jsp" />
 		<jsp:include page="/includes/navigation.jsp" />
 		<div class="pageIdentifier">Registration Page</div>
         <div class="content">
-            <form action="" method="post" >
+            <form action="register.do" method="post" >
                 <div class="dialog">
                     <table>
                         <tbody>
@@ -47,7 +48,7 @@
                                     <label for="username">Username</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" maxlength="15" name="username" value="" id="username" />
+                                    <input type="text" maxlength="15" name="userName" value="" id="userName" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -87,14 +88,14 @@
                                     <label for="zipcode">Zipcode</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="zipcode" value="" id="zipcode" />
+                                    <input type="text" name="zipCode" value="" id="zipCode" />
                                 </td>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="areacode">Area Code</label>
                                 </td>
                                 <td valign="top" class="value ">
-                                    <input type="text" name="areacode" value="" id="areacode" />
+                                    <input type="text" name="areaCode" value="" id="areaCode" />
                                 </td>
                             </tr>
                             <tr class="prop">
@@ -113,6 +114,7 @@
                 </div>
             </form>
         </div>
-        </center>
+	</div>
+    </center>
     </body>
 </html>

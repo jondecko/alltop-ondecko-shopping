@@ -4,3 +4,6 @@
 <div class="banner">
 	<h1>Alltop/Ondecko Shopping Cart Application</h1>
 </div>
+<div class="sessionName">
+Welcome: ${sessionMap.session_userName}
+</div>

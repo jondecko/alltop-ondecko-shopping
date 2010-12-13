@@ -6,6 +6,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Altop/Ondecko Shopping Cart Application - View Profile</title>
+        <title>Registration Sucess</title>
         <link rel="stylesheet" href="assets/css/comp461.css" />
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
     </head>
@@ -14,7 +15,7 @@
 	<div class="mainShell">
 		<jsp:include page="/includes/banner.jsp" />
 		<jsp:include page="/includes/navigation.jsp" />
-		<div class="pageIdentifier">Profile Page</div>
+		<div class="pageIdentifier">Registration Success Page</div>
 		<c:forEach var="result" items="${results}">
         <div class="content">
 			<table>
