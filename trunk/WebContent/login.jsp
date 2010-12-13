@@ -15,7 +15,7 @@
 		<jsp:include page="/includes/navigation.jsp" />
 		<div class="pageIdentifier">Home Page</div>
 		<div class="content">
-			<form action="" method="post" >
+			<form action="login.do" method="POST" >
                 <div class="dialog">
                     <table>
                         <tbody>

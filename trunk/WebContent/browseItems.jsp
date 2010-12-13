@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -15,28 +16,29 @@
 		<jsp:include page="/includes/navigation.jsp" />
 		<div class="pageIdentifier">Browse Items Page</div>
 		<div class="content">
-			<form action="" method="post">
-				<table border="1">
+			
+				<table border="1">	
+				<c:forEach var="result" items="${results}">
 					<tr>
-						<td width=10%><center><img src="assets/images/item1.jpg"></center></td>
-						<td width=55%>Five pound dog with black hair.</td>
-						<td width=10%>$125.25</td>
-						<td width=5%><input type="text" name="" value="" id="" /></td>				
+						<td width=10%><center><img width="100" height="100" src="${result.IMAGE}" /></center></td>
+						<td width=55%>${result.DESCRIPTION}</td>
+						<td width=10%>${result.PRICE}</td>
+						<td width=5%>
+							<form action="addItemToCart.do" method="post">
+							<input style="display:none" type="text" name="product_ID" id="product_ID" value="${result.PRODUCT_ID}" />
+							<input type="text" name="numItems" value="" id="numItems" />
+							<input type="submit" name="add" value="Add" id="add" />
+							</form>
+						</td>	
 						<td width=15%>
-						<input type="button" onclick="location='viewItem.jsp'" value="Details" />
-						<input type="button" onclick="" value="Add" /></td>
+							<form name="${result.PRODUCT_ID}" action="viewItem.do" method="POST">
+							<input style="display:none" type="text" name="product_ID" id="product_ID" value="${result.PRODUCT_ID}" />
+							<input type="submit" value="Details" />
+							</form>
+						</td>
 					</tr>
-					<tr>
-						<td width=10%><center><img src="assets/images/item2.jpg"></center></td>
-						<td width=55%>A "high five" from a pro-highfiver.</td>
-						<td width=10%>$5.00</td>
-						<td width=5%><input type="text" name="" value="" id="" /></td>
-						<td width=15%>
-						<input type="button" onclick="location='viewItem.jsp'" value="Details" />
-						<input type="button" onclick="" value="Add" /></td>
-					</tr>
+				</c:forEach>
 				</table>
-			</form>
 		</div>	<!-- End content div -->
     </div>	<!-- End mainShell div -->
     </center>

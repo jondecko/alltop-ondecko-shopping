@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-
 <controller>
 	<action>
-		<name>Register</name>
-		<class>RegisterClass</class>
-		<success>/viewProfile.jsp</success>
+		<name>register.do</name>
+		<class>actionPackage.RegisterAction</class>
+		<success>/registrationSucess.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>
 	<action>
-		<name>Login</name>
-		<class>LoginClass</class>
+		<name>login.do</name>
+		<class>actionPackage.LoginAction</class>
 		<success>/index.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>
 	<action>
-		<name>EditProfile</name>
-		<class>EditProfileClass</class>
+		<name>editProfile.do</name>
+		<class>actionPackage.EditProfileAction</class>
+		<success>/editProfile.jsp</success>
+		<failure>/editProfile.jsp</failure>
+		<param>none</param>
+	</action>
+	<action>
+		<name>viewProfile.do</name>
+		<class>actionPackage.viewProfileAction</class>
 		<success>/viewProfile.jsp</success>
 		<failure>/viewProfile.jsp</failure>
 		<param>none</param>
 	</action>
 	<action>
-		<name>ViewProfile</name>
-		<class>ViewProfileClass</class>
-		<success>/viewProfile.jsp</success>
-		<failure>/viewProfile.jsp</failure>
-		<param>none</param>
-	</action>
-	<action>
-		<name>BrowseItems</name>
-		<class>BrowseItemsClass</class>
+		<name>browseItems.do</name>
+		<class>actionPackage.BrowseItemAction</class>
 		<success>/browseItems.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>
 	<action>
-		<name>ViewItem</name>
-		<class>ViewItemClass</class>
+		<name>viewItem.do</name>
+		<class>actionPackage.ViewItemAction</class>
 		<success>/viewItem.jsp</success>
+		<failure>/index.jsp</failure>
+		<param>none</param>
+	</action>
+	<action>
+		<name>addItemToCart.do</name>
+		<class>actionPackage.AddCartItemAction</class>
+		<success>/viewCart.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>

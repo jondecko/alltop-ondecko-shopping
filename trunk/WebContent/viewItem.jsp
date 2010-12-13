@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -15,26 +16,27 @@
 		<jsp:include page="/includes/navigation.jsp" />
 		<div class="pageIdentifier">View Item Page</div>
 		<div class="content">
+			<c:forEach var="result" items="${results}">
 			<div class="viewItemShell">
 				<!-- Left Panel -->
 				<div class="viewItemLeftPanel">
-					<div class="viewItemImage"><img src="assets/images/item1.jpg"></div>
-					<form action="" method="post">
-					<p><input type="text" name="" value="" id="" /></p>
+					<div class="viewItemImage"><img width="150" height="150" src="${result.IMAGE}" /></div>
+					<form action="addItemToCart.do" method="post">
+					<p><input type="text" name="numItems" value="" id="numItems" /></p>
 					<center><p><input type="submit" class="create" name="add" value="Add" id="add" /></p></center>
+					<input style="display:none" type="text" name="product_ID" id="product_ID" value="${result.PRODUCT_ID}" />
 					</form>
 				</div>
 				<!-- Right Panel -->
 				<div class="viewItemRightPanel">
-					<div class="viewItemName"><h2>Max</h2></div>
-					<div class="viewItemShort"><p>Five pound dog with black hair.</div>
-					<div class="viewItemPrice"><p>$125.25</p></div>
-					<div class="viewItemStock"><p>In Stock (1)</p></div>
-					<div class="viewItemDescription"><p>This is my dog Max.  He is about five pounds and is about a year and a half old.  He will bark at the
-					mail man and keep you company in the evenings.  He likes to be fed about three 2-3 times a day (few cups of dry food), and he requires you
-					to take him outside often (small bladder).  However, he is house broken and will wait if needed.  Great buy!</p></div>
+					<div class="viewItemName"><h2>${result.PRODUCT_NAME}</h2></div>
+					<div class="viewItemShort"><p>${result.DESCRIPTION}</div>
+					<div class="viewItemPrice"><p>${result.PRICE}</p></div>
+					<div class="viewItemInStock"><p>Quantity Available(${result.QUANTITY_ON_HAND})</p></div>
+					<div class="viewItemDescription"><p>${result.SUMMARY}</p></div>
 				</div>
 			</div>
+			</c:forEach>
 		</div>	<!-- End content div -->
     </div>	<!-- End mainShell div -->
     </center>
