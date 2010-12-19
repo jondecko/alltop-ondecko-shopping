@@ -11,8 +11,8 @@
 	<body>
 	<center>
 	<div class="mainShell">
-		<jsp:include page="/includes/banner.jsp" />
-		<jsp:include page="/includes/navigation.jsp" />
+		<jsp:include page="/includes/preLoginBanner.jsp" />
+		<jsp:include page="/includes/preLoginNavigation.jsp" />
 		<div class="pageIdentifier">Home Page</div>
 		<div class="content">
 			<p>Temp "home page" for the "Altop - Ondecko" shopping cart application.  Prepare to be amazed!

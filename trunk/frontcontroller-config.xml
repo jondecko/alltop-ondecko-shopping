@@ -10,6 +10,13 @@
 	<action>
 		<name>login.do</name>
 		<class>actionPackage.LoginAction</class>
+		<success>/viewProfile.do</success>
+		<failure>/index.jsp</failure>
+		<param>none</param>
+	</action>
+	<action>
+		<name>logout.do</name>
+		<class>actionPackage.LogoutAction</class>
 		<success>/index.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
@@ -50,8 +57,8 @@
 		<param>none</param>
 	</action>
 	<action>
-		<name>ViewCart</name>
-		<class>ViewCartClass</class>
+		<name>viewCart.do</name>
+		<class>actionPackage.AddCartItemAction</class>
 		<success>/viewCart.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>

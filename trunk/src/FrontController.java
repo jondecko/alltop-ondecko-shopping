@@ -72,8 +72,7 @@ public class FrontController extends HttpServlet
 			// Get everything ready and sent to the proper view
 			String mappedResult = actionMap.getSuccess(parsedURI);
 			request.setAttribute("results", actionContainer.getOutputs().get("results"));
-		    request.setAttribute("sessionMap", sessionMap);
-		    	    
+		    request.setAttribute("sessionMap", sessionMap); 
 			RequestDispatcher view = request.getRequestDispatcher(mappedResult);
 			view.forward(request, response);
 		}
@@ -123,11 +122,7 @@ public class FrontController extends HttpServlet
 			// Get everything ready and sent to the proper view
 			String mappedResult = actionMap.getSuccess(parsedURI);
 			request.setAttribute("results", actionContainer.getOutputs().get("results"));
-		    request.setAttribute("sessionMap", sessionMap);
-		    
-		    HashMap foo = (HashMap)request.getAttribute("sessionMap");
-		    System.out.println(foo.get("session_userName"));
-		    
+		    request.setAttribute("sessionMap", sessionMap); 
 			RequestDispatcher view = request.getRequestDispatcher(mappedResult);
 			view.forward(request, response);
 		}
