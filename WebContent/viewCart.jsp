@@ -27,29 +27,25 @@
                            		<td valign="top" class="image"><img width="50" height="50" src="${result.IMAGE}"></td>
                                 <td valign="top" class="name">${result.PRODUCT_NAME}</td>
                                 <td valign="top" class="description">${result.DESCRIPTION}</td>
-                                <td valign="top" class="quantity"></td>
-                                <td valign="top" class="itemPrice"></td>
-                                <td valign="top" class="totalPrice"></td>
+                                <td valign="top" class="quantity">${result.LINE_QUANTITY}</td>
+                                <td valign="top" class="itemPrice">${result.LINE_PRICE}</td>
+                                <td valign="top" class="totalPrice">${result.LINE_TOTAL}</td>
                                 <td valign="top" class="name">
                                   <div class="buttons">
                                     <span class="button">
-                                      <input type="button" value="Edit" />
                                       <input type="button" value="Remove" />
                                     </span>
                                   </div>
                                 </td>
                             </tr>
                             </c:forEach>
-                            
-                            
-                            
                             <tr class="prop">
                            		<td></td>
                                	<td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td valign="top" class="grandTotalPrice">$150.25</td>
+                                <td valign="top" class="grandTotalPrice">$0.00</td>
                                 <td><input type="submit" value="Checkout" /></td>
                             </tr>
                         </tbody>

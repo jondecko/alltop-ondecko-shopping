@@ -13,8 +13,8 @@
     <body>
 	<center>
 	<div class="mainShell">
-		<jsp:include page="/includes/banner.jsp" />
-		<jsp:include page="/includes/navigation.jsp" />
+		<jsp:include page="/includes/preLoginBanner.jsp" />
+		<jsp:include page="/includes/preLoginNavigation.jsp" />
 		<div class="pageIdentifier">Registration Success Page</div>
 		<c:forEach var="result" items="${results}">
         <div class="content">
