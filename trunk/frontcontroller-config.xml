@@ -64,37 +64,37 @@
 		<param>none</param>
 	</action>
 	<action>
-		<name>ViewHistory</name>
-		<class>ViewHistoryClass</class>
+		<name>removeCartItem.do</name>
+		<class>actionPackage.RemoveCartItemAction</class>
+		<success>/viewCart.jsp</success>
+		<failure>/index.jsp</failure>
+		<param>none</param>
+	</action>
+	<action>
+		<name>checkout.do</name>
+		<class>actionPackage.CheckoutAction</class>
 		<success>/viewHistory.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>
 	<action>
-		<name>PlaceOrder</name>
-		<class>PlaceOrderClass</class>
-		<success>/viewOrderCheckout.jsp</success>
+		<name>viewHistory.do</name>
+		<class>actionPackage.CheckoutAction</class>
+		<success>/viewHistory.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>
 	<action>
-		<name>ViewOrderComplete</name>
-		<class>ViewOrderClass</class>
-		<success>/viewOrderComplete.jsp</success>
+		<name>resetApplication.do</name>
+		<class>actionPackage.ResetApplicationAction</class>
+		<success>/index.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>
 	<action>
-		<name>ViewOrderCheckout</name>
-		<class>ViewOrderClass</class>
-		<success>/viewOrderCheckout.jsp</success>
-		<failure>/index.jsp</failure>
-		<param>none</param>
-	</action>
-	<action>
-		<name>ViewOrderCanceled</name>
-		<class>ViewOrderClass</class>
-		<success>/viewOrderCanceled.jsp</success>
+		<name>viewOrder.do</name>
+		<class>actionPackage.ViewOrderAction</class>
+		<success>/viewOrder.jsp</success>
 		<failure>/index.jsp</failure>
 		<param>none</param>
 	</action>

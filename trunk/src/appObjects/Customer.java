@@ -1,6 +1,4 @@
 package appObjects;
-import java.util.HashMap;
-import java.util.Map;
 
 import edu.franklin.db.sql.AbstractSqlOperation;
 import edu.franklin.db.sql.ExecuteQuery;
@@ -69,5 +67,30 @@ public class Customer
 	public void deleteCustomer(int customerId)
 	{
 		// may add at some point
+	}
+
+	public MapMakerProcessor getHistory(int userId)
+	{
+		MapMakerProcessor queryResults = new MapMakerProcessor();
+		String command = "SELECT * FROM ORDERS " 
+			           + "WHERE ORD_CUST_ID=" + userId + " "
+					   + "AND ORDER_STATUS<>'cart'";
+		AbstractSqlOperation query = new ExecuteQuery(queryResults, command);
+		query.execute();
+		return queryResults;
+	}
+
+	public MapMakerProcessor getOrder(int orderId)
+	{
+		MapMakerProcessor queryResults = new MapMakerProcessor();
+		String command = "SELECT * FROM ORDERLINES " 
+					   + "INNER JOIN ORDERS "
+					   + "ON LINE_ORDER_ID = ORDER_ID "
+					   + "INNER JOIN PRODUCTS "
+					   + "ON ORD_PRODUCT_ID = PRODUCT_ID "
+					   + "WHERE LINE_ORDER_ID=" + orderId;
+		AbstractSqlOperation query = new ExecuteQuery(queryResults, command);
+		query.execute();
+		return queryResults;
 	}
 }
