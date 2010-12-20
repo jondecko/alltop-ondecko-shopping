@@ -46,4 +46,16 @@ public class Product
     	query.execute();
     	return queryResults;
 	}
+	
+	public MapMakerProcessor getProducts(int orderId)
+	{
+		MapMakerProcessor queryResults = new MapMakerProcessor();
+		String command = "SELECT * FROM ORDERLINES "
+			           + "INNER JOIN PRODUCTS "
+			           + "ON ORD_PRODUCT_ID = PRODUCT_ID "
+			           + "WHERE LINE_ORDER_ID=" + orderId;
+		AbstractSqlOperation query = new ExecuteQuery(queryResults, command);
+		query.execute();
+		return queryResults;
+	}
 }

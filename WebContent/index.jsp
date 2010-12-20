@@ -19,7 +19,9 @@
 			Debbie Altop and Jimmy Ondecko are working together in the Franklin University COMP461 class.  Together they are building a 
 			shopping cart application that works just like many popular shopping carts that can be found on the internet (Amazon, Newegg, etc).</p>
 			<p>For now, the pages are linking to every page that has been identified through the "Use Case" phase of the project.  This type of navigation will 
-			be cleaned up as the project progresses and the proper interaction, between the pages, is discovered.  Till then, the professor can enjoy some easy browsing!
+			be cleaned up as the project progresses and the proper interaction, between the pages, is discovered.  Till then, the professor can enjoy some easy browsing!</p>
+			<p>You may want to start off this application by doing a reset.  It will reset the database back to its default data.  You can do that 
+			<a href="resetApplication.do">HERE</a></p>
 		</div>	<!-- End content div -->
     </div>	<!-- End mainShell div -->
     </center>

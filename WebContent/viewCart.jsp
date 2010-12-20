@@ -16,28 +16,25 @@
 		<jsp:include page="/includes/navigation.jsp" />
 		<div class="pageIdentifier">View Cart Page</div>
 		<div class="content">
-			<form action="viewOrderCheckout.jsp" method="POST" >
                 <div class="dialog">
-                    <table border="1"><tr><th></th><th>Product</th><th>Product Description</th><th>Quantity</th><th>Item Price</th><th>Total Price</th><th>Action</th>
+                    <table border="1"><tr>Image<th></th><th>Product</th><th>Product Description</th><th>Quantity</th><th>Item Price</th><th>Total Price</th><th>Action</th>
                         <tbody>
-                        	<!-- Simple basic UI filler data -->
-                        	
+                        
                         	<c:forEach var="result" items="${results}">
-                           <tr class="prop">
-                           		<td valign="top" class="image"><img width="50" height="50" src="${result.IMAGE}"></td>
-                                <td valign="top" class="name">${result.PRODUCT_NAME}</td>
-                                <td valign="top" class="description">${result.DESCRIPTION}</td>
-                                <td valign="top" class="quantity">${result.LINE_QUANTITY}</td>
-                                <td valign="top" class="itemPrice">${result.LINE_PRICE}</td>
-                                <td valign="top" class="totalPrice">${result.LINE_TOTAL}</td>
-                                <td valign="top" class="name">
-                                  <div class="buttons">
-                                    <span class="button">
-                                      <input type="button" value="Remove" />
-                                    </span>
-                                  </div>
-                                </td>
-                            </tr>
+                           		<tr class="prop">
+                           			<td valign="top" class="image"><img width="50" height="50" src="${result.IMAGE}"></td>
+                               	 	<td valign="top" class="name">${result.PRODUCT_NAME}</td>
+                                	<td valign="top" class="description">${result.DESCRIPTION}</td>
+                                	<td valign="top" class="quantity">${result.LINE_QUANTITY}</td>
+                                	<td valign="top" class="itemPrice">${result.LINE_PRICE}</td>
+                                	<td valign="top" class="totalPrice">${result.LINE_TOTAL}</td>
+                                	<td valign="top" class="name">
+                                    	<form name="${result.PRODUCT_ID}" action="removeCartItem.do" method="POST">
+                                      		<input style="display:none" type="text" name="line_ID" id="line_ID" value="${result.LINE_ID}" />
+                                      		<input type="submit" name="add" value="Remove" id="Remove" />
+                                      	</form>
+                               		</td>
+                           		</tr>
                             </c:forEach>
                             <tr class="prop">
                            		<td></td>
@@ -45,15 +42,18 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td valign="top" class="grandTotalPrice">$0.00</td>
-                                <td><input type="submit" value="Checkout" /></td>
+                                <td valign="top" class="grandTotalPrice">${results[0].FINAL_TOTAL}</td>
+                                <td>
+                                	<form name="checkout" action="checkout.do" method="POST">
+                                		<input type="submit" value="Checkout" />
+                                	</form>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                     <br>
                     <br>
                 </div>
-            </form>
 		</div>	<!-- End content div -->
     </div>	<!-- End mainShell div -->
     </center>
